@@ -1,7 +1,5 @@
-with open ('14.input') as f:
-    input = [x for x in f.read().split('\n')]
-
-board = [[letter for letter in line] for line in input]
+with open('14.input') as f:
+    board = [list(line) for line in f.readlines()]
 
 def tiltNorth(input):
     board = input
